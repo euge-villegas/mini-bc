@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <h3>I'm in the AppComponent</h3>
+            <hr>
+            <app-servers></app-servers>
+            <hr>
+            <warning-alert></warning-alert>
+            <success-alert></success-alert>
+        </div>
+        <div class="col-xs-12">
+            <!--<button class="btn btn-primary" (click)="showSecret = !showSecret">Display Details</button>-->
+            <button class="btn btn-primary" (click)="onToggleDetails()">Display Details</button>
+            <p *ngIf="showSecret">Secret password = Michi</p>
+            <div 
+                *ngFor="let logItem of log; let i = index"
+                [ngStyle]="{backgroundColor: logItem >= 5 ? 'blue' : 'transparent'}"
+                [ngClass]="{'white-text': i >= 4}"
+                >{{ logItem }}</div>
+        </div>
+    </div>
+</div>

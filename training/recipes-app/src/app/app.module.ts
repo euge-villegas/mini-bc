@@ -8,7 +8,9 @@ import { HeaderComponent } from './header/header.component';
 import { AppRoutingModule } from './app-routing.module';
 import { SharedModule } from './shared/shared.module';
 import { CoreModule } from './core.module';
-import { LogginService } from './logging.service';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './material/material.module';
+import { MatCardModule } from '@angular/material/card'
 
 @NgModule({
   declarations: [
@@ -21,8 +23,12 @@ import { LogginService } from './logging.service';
     HttpClientModule,
     AppRoutingModule,
     SharedModule,
-    CoreModule
+    CoreModule,
+    BrowserAnimationsModule,
+    MaterialModule,
+    MatCardModule
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  
 })
 export class AppModule { }

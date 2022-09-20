@@ -1,0 +1,15 @@
+.recipe-card {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.recipe-card-img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}

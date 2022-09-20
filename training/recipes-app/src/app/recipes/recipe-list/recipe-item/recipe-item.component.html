@@ -1,18 +1,24 @@
-<a  
+<a    
     style="cursor: pointer;"
     [routerLink]="[index]"
     routerLinkActive="active"
-    class="list-group-item clearfix"
->
-<div class="pull-left">
-    <h4 class="list-group-item-heading"> {{recipe.name}} </h4>
-    <p class="list-group-item-text"> {{ recipe.description }} </p>
-</div>
-<span class="pull-right">
-    <img 
-        [src]="recipe.imagePath" 
-        alt="{{ recipe.name }}" 
-        class="img-responsive" 
-        style="max-height: 100px;">
-</span>
+    class="list-group-item clearfix">
+    <mat-card class="recipe-card">
+        <mat-card-header>
+            <mat-card-title>
+                {{recipe.name}}
+            </mat-card-title>
+        </mat-card-header>
+
+        <img 
+            mat-card-image
+            [src]="recipe.imagePath" 
+            alt="{{ recipe.name }}" 
+            class="recipe-card-img"
+        >
+        <br>
+        <mat-card-content>
+            {{ recipe.description }}
+        </mat-card-content>
+    </mat-card>
 </a>

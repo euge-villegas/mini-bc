@@ -13,9 +13,9 @@ export class DataStorageService {
     storeRecipes() {
         const recipes = this.recipeService.getRecipes();
         this.http.put('https://recipe-app-6df85-default-rtdb.firebaseio.com/recipes.json', recipes)
-        .subscribe(response => {
-            console.log(response);
-        });
+        // .subscribe(response => {
+        //     console.log(response);
+        // });
     }
 
     fetchRecipes() {

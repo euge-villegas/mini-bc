@@ -1,0 +1,17 @@
+* {
+    max-width: 500px;
+}
+
+.mat-card {
+    max-width: 450px;
+}
+
+.mat-card-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.recipe-menu-link {
+    text-decoration: none;
+}

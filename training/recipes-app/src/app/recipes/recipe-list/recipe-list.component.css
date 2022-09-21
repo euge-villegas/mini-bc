@@ -1,0 +1,21 @@
+.recipe-item {
+    max-width: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.recipe-list-title {
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+h2 {
+    margin-top: 15px;
+}

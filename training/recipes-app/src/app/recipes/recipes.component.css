@@ -1,0 +1,13 @@
+div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+app-recipe-list {
+    max-width: 65%;
+}
+
+router-outlet {
+    max-width: 33%;
+}
